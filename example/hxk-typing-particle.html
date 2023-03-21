@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta http-equiv="Content-Type" content="text/html" />
+		<meta name="full-screen" content="yes" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js"></script>
+
+		<title>typing</title>
+	</head>
+	<style></style>
+	<body>
+		<button id="button" type="button" onclick="stop()">停止</button>
+		<button id="button" type="button" onclick="asdqwe()">遮罩</button>
+		<div id="aaa"></div>
+	</body>
+	<script type="text/javascript" src="../dist/hxk-tool-box.umd.js"></script>
+	<script type="text/javascript">
+		// import { ExeEmojiParticle } from "../dist/eft-tool-box.esm.js"
+		console.log(hxkToolBox);
+		let typing = new hxkToolBox.Typing({
+			elm: "#aaa",
+			strings: [
+				"Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣",
+				"Hope you have a nice day!🍭🍭🍭",
+			],
+      // changeCallback: (text)=> { console.log(text);},
+			startDelaySpeed: 150,
+			deleteSpeed: 50,
+			shouldDelete: false,
+		});
+
+		function stop () {
+			typing.stopWriting()
+		}
+
+		function start () {
+			typing.stopWriting()
+		}
+		// new Typed("#aaa", {
+		// 	strings: [
+		// 		"Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣",
+		// 		"Hope you have a nice day!🍭🍭🍭",
+		// 	],
+		// 	startDelay: 300,
+		// 	typeSpeed: 150,
+		// 	loop: !0,
+		// 	backSpeed: 50,
+		// });
+	</script>
+</html>

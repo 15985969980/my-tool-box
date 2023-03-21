@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta http-equiv="Content-Type" content="text/html" />
+		<meta name="full-screen" content="yes" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<title>loading</title>
+	</head>
+	<style>
+		
+	</style>
+	<body>
+		<button id="button" type="button" onclick="asdqwe()">遮罩</button>
+	</body>
+	<script type="text/javascript" src="../dist/hxk-tool-box.umd.js"></script>
+	<script type="text/javascript">
+		// import { ExeEmojiParticle } from "../dist/eft-tool-box.esm.js"
+		console.log(hxkToolBox);
+		let loading = new hxkToolBox.Loading();
+		let loading1 = new hxkToolBox.Loading();
+		console.log(loading === loading1);
+		console.log(this.asdqwe);
+		let a = this;
+		function asdqwe() {
+			console.log(111);
+			loading.showLoading();
+			setTimeout(() => {
+				console.log(222);
+				loading1.hideLoading();
+			}, 3000);
+		}
+	</script>
+</html>

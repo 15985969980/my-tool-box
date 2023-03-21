@@ -1,0 +1,34 @@
+{
+  "name": "my-tool-box",
+  "version": "1.0.0",
+  "description": "tool box",
+  "main": "dist/hxk-tool-box.umd.js",
+  "module": "dist/hxk-tool-box.esm.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "build:dev": "cross-env NODE_ENV=development rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c"
+  },
+  "keywords": [
+    "插件"
+  ],
+  "author": "hxk",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "core-js": "^3.23.5",
+    "cross-env": "^7.0.3",
+    "rollup": "^2.77.0",
+    "rollup-plugin-styles": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "sass": "^1.54.8",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
+}
